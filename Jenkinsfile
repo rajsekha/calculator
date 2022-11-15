@@ -10,7 +10,7 @@ pipeline {
                 script{
                     echo 'Hello World'
                     if(params.TEST_TYPE == 'RELEASE') {
-                        echo '${jenkinsfile-new}'
+                        echo "${jenkinsfile-new}"
                     } else {
                         echo 'in else'
                     }
