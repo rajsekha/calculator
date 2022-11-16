@@ -3,7 +3,9 @@ pipeline {
     parameters {
         choice(name: 'TEST_TYPE', choices: "RELEASE\nTEST_PLAN", description: 'Regression Suite or Test Plan')
     }
-    triggers {	    cron('4 12 * * *')    }
+    triggers {	  
+        cron('6 12 * * *')  
+    }
     stages {
         stage('Hello') {
             steps {
