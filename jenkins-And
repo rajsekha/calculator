@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage ('Invoke_pipeline') {
             steps {	    
-                build job: 'Quinnox-ios', parameters: [string(name: 'DEVICE_TYPE', value: 'iOS'), string(name: 'TEST_TYPE', value: 'params.TEST_TYPE')]
+                build job: 'Quinnox-ios', parameters: [string(name: 'DEVICE_TYPE', value: 'iOS'), string(name: 'TEST_TYPE', value: params.TEST_TYPE)]
 	    }
         }
 
