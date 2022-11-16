@@ -2,13 +2,13 @@ pipeline {
     agent any
     stages {
         stage ('Invoke_pipeline') {
-            steps {
-	      triggers {
-	            cron('18 17 * * *')
-              }
+            steps {	    
                 build job: 'Quinnox-ios', parameters: [
                 string(name: 'TEST_TYPE', value: "RELEASE")
                 ]
+		triggers {
+	            cron('18 17 * * *')
+              }
             }
         }
 
