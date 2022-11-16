@@ -1,8 +1,8 @@
 pipeline {
     agent any
      parameters {
-                string(name: 'TEST_TYPE', value: "RELEASE")
-                string(name: 'DEVICE_TYPE', value: "iOS")
+                string(name: 'TEST_TYPE', defaultValue: "RELEASE")
+                string(name: 'DEVICE_TYPE', defaultValue: "iOS")
                 }
     stages {
         stage ('Invoke_pipeline') {
