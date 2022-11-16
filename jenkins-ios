@@ -1,14 +1,19 @@
+
 pipeline {
     agent any
-     parameters {
-                string(name: 'TEST_TYPE', defaultValue: "RELEASE")
-                string(name: 'DEVICE_TYPE', defaultValue: "iOS")
-                }
     stages {
         stage ('Invoke_pipeline') {
             steps {	    
-                build job: 'Quinnox-ios', parameters: ([] + params)
-		}
-        }       
+                build job: 'Quinnox-ios', parameters: ( [
+		string(name: 'DEVICE_TYPE', value: "iOS")
+                ] )
+            }
+        }
+
+        stage('End') {
+            steps {
+                echo 'ls'
+            }
+       }        
     }
 }
