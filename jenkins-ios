@@ -7,13 +7,8 @@ pipeline {
     stages {
         stage ('Invoke_pipeline') {
             steps {	    
-                build job: 'Quinnox-ios', parameters: ([] + [arams)
+                build job: 'Quinnox-ios', parameters: ([] + params)
 		}
-        }
-        stage ('Invoke_pipeline') {
-            steps {	    
-                build job: 'Quinnox-ios', parameters: ([] + [arams)
-	    }
         }       
     }
 }
