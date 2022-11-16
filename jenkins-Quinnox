@@ -3,13 +3,10 @@ pipeline {
     stages {
         stage ('Invoke_pipeline') {
             steps {	    
-                build job: 'Quinnox-ios', parameters: [
+                build job: 'Quinnox-ios', parameters: ( [
                 string(name: 'TEST_TYPE', value: "RELEASE")
 		string(name: 'DEVICE_TYPE', value: "Android")
-                ]
-		triggers {
-	            cron('18 17 * * *')
-              }
+                ] )
             }
         }
 
