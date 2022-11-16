@@ -10,10 +10,7 @@ pipeline {
                 script{
                     echo 'Hello World'
                     if(params.TEST_TYPE == 'RELEASE') {
-                         bat '''
-                           Run.bat -run -project_location -d ./jenkinsfile -R ../jenkinsfile-new
-                           
-                         '''
+                         echo ' okk'
                     } else {
                         echo 'in else'
                     }
