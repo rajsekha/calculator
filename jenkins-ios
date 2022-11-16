@@ -1,22 +1,19 @@
 pipeline {
     agent any
+     parameters {
+                string(name: 'TEST_TYPE', value: "RELEASE")
+                string(name: 'DEVICE_TYPE', value: "iOS")
+                }
     stages {
         stage ('Invoke_pipeline') {
             steps {	    
-                build job: 'Quinnox-ios', parameters: [
-                string(name: 'TEST_TYPE', value: "RELEASE")
-                string(name: 'DEVICE_TYPE', value: "iOS")
-                ]
-		triggers {
-	            cron('18 17 * * *')
-              }
-            }
+                build job: 'Quinnox-ios', parameters: ([] + [arams)
+		}
         }
-
-        stage('End') {
-            steps {
-                echo 'ls'
-            }
-       }        
+        stage ('Invoke_pipeline') {
+            steps {	    
+                build job: 'Quinnox-ios', parameters: ([] + [arams)
+	    }
+        }       
     }
 }
