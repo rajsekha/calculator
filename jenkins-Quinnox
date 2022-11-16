@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+    stages {
+        stage ('Invoke_pipeline') {
+            triggers {
+	            cron('18 17 * * *')
+            }
+            steps {
+                build job: 'Quinnox-ios', parameters: [
+                string(name: 'TEST_TYPE', value: "RELEASE")
+                ]
+            }
+        }
+
+        stage('End') {
+            steps {
+                echo 'ls'
+            }
+       }        
+    }
+}
+        
