@@ -1,10 +1,13 @@
 
 pipeline {
     agent any
+    triggers {
+     corn (' 9 11 * * * ')
+     }
     stages {
         stage ('Invoke_pipeline') {
             steps {	    
-                build job: 'Quinnox-ios', parameters: [string(name: 'DEVICE_TYPE', value: 'iOS'), string(name: 'TEST_TYPE', value: 'RELEASE')]
+                build job: 'Quinnox-ios', parameters: [string(name: 'DEVICE_TYPE', value: 'Android'), string(name: 'TEST_TYPE', value: 'RELEASE')]
 
             }
         }
