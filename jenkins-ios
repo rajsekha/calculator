@@ -13,7 +13,7 @@ pipeline {
 		    string(name: 'DEVICE', value: 'iphone11Quin'), string(name: 'RELEASE', value: 'Jenkins_execution_Pack'),string(name: 'TEST_SET', value: 'Platinum_Pack_2')],  wait: false
                 }
 	    }
-	stage ('end')
+	stage ('end') {
 	   echo ' build end '
 	}   
         }  
