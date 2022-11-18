@@ -8,7 +8,7 @@ pipeline {
         stage ('Invoke_pipeline') {
             steps {	    
                 build job: 'Quinnox-ios', parameters: [string(name: 'DEVICE_TYPE', value: 'Android'), string(name: 'TEST_TYPE', value: 'RELEASE'), 
-		string(name: 'DEVICE', value: 'GalaxyS10'), string(name: 'RELEASE', value: 'Jenkins_execution_Pack')]
+		string(name: 'DEVICE', value: 'GalaxyS10'), string(name: 'RELEASE', value: 'Jenkins_execution_Pack')],  wait: false
             }
         }
 
