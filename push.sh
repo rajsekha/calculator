@@ -1,7 +1,5 @@
-echo 'enter the file name'
-read filename
 
-git add $filename
+git add .
 
 git commit -m "commit changes"
 

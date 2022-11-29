@@ -1,0 +1,56 @@
+ ACCESS DETAILS FOR TSB ACCOUNT
+-------------------------
+Sabis link :https://partners.bancsabadell.com/Citrix/BSXD7_NWWeb/
+jira link : https://tsbchange.atlassian.net/browse/TCP-14932
+Jump Server - https://tsbchange.atlassian.net/browse/TCP-14932
+Open Vpn - https://tsbchange.atlassian.net/browse/TCP-14931
+Jenkins -https://tsbchange.atlassian.net/browse/TCP-16212
+--------------------------------------------------------------
+Unumber : U785301
+PASSWORD : 1234RARE
+Inumber  :  I024850
+PASSWORD : 1234erre
+ Email : U785301@adgbs.com
+-------------------------------
+Jenkins:-
+
+Username: E_Rajashekar
+Password: Welcome@15777751
+
+nonprod:
+---------
+username:e_rajashekar
+password:Welcome@1234
+
+----------------------------------
+openvpn:-
+
+Username: E.Rajashekar.Reddy@ibm.com
+Password: Welcome@15777751
+------------------------------------
+Jumpbox:-
+
+Jumpbox is 10.198.165.58
+  Username : E.Rajashekar.Reddy
+ Password : Rajsekhar@799339
+-------------------------------------------
+Aws account:-
+
+Sign-in URL: https://119894207375.signin.aws.amazon.com/console 
+Username: E.Rajashekar.Reddy@ibm.com
+Password : RedSunMoon@135
+Access key ID : AKIARX2SANOH4KMHKNFK
+Secret access key : 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
+Console login link : https://119894207375.signin.aws.amazon.com/console
+
+---------------------
+GitHub:-
+Username:Rajshekar1818
+email : E.Rajashekar.Reddy@ibm.com
+Password: Happy@1818
+-----------------------------------------
+
+Request Id: c083ad65-4833-4f63-99e5-ab67c1114c00
+Correlation Id: b91660f1-2b8d-43c4-aa5b-735cb490fe65
+Timestamp: 2022-08-24T05:47:04Z
+Message: AADSTS50105: Your administrator has configured the application GitHub (Organisation) ('e36bdc04-b0ce-4de9-b74b-9cdb7c244b21') to block users unless they are specifically granted ('assigned') access to the application. The signed in user 'E.Rajashekar.Reddy@ibm.com' is blocked because they are not a direct member of a group with access, nor had access directly assigned by an administrator. Please contact your administrator to assign access to this application.
