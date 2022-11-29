@@ -1,0 +1,39 @@
+ cpmd.bat -d src\main -R rulesets/java/quickstart.xml -f text
+pmd -d src\main -R ruleset.xml
+
+Improve Apex Code Quality with PMD
+mkdir git_<flodername>
+cd git_flodername
+pwd # it will display loc of floder
+git init
+git pull <url>
+then u can use c:/windows/notepad <fileanme u want to open>
+git status
+git add .
+git commit -m "comments "
+git status
+git remote add origin <url>
+git remote -v
+git push -u origin master
+------------------------------------
+cmd :-
+-------------
+cd ../..
+git clone <url>
+dir # one floder is created in c drive
+cd floder name
+mvn clean package
+
+
+pmd.bat -d src\main -R rulesets/java/quickstart.xml -f text
+
+
+
+
+
+
+
+
+
+
+
