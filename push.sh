@@ -14,9 +14,10 @@ git remote -v
 echo 'Enter the name of the branch:'
 read branch
 
-git push -u origin "$branch"
+git push -f origin "$branch"
 
 read
+
 
 
 
