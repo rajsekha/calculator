@@ -1,18 +1,18 @@
 #! /bin/bash
 
-declare -A map
-
-map["cal1"]="calculator"
-
-git init
-git checkout branch -b master
 git add .
-git commit -m "upload changes"
 
-for i in "${!map[0]}"
-do
-	git remote add $i https://github.com/rajsekha/calculator.git/${map[$i]}.git
-	git push -u $i master
-done
+echo 'Enter the commit message:'
+read commitMessage
+
+git commit -m "$commitMessage"
+
+echo 'Enter the name of the branch:'
+read branch
+
+git push origin $branch
+
+read
+
 
 
