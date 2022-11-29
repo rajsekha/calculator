@@ -2,21 +2,20 @@
 
 git add .
 
-echo 'Enter the commit message:'
-read commitMessage
+git commit -m "upload changes"
 
-git commit -m "$commitMessage"
-
-git remote add origin git@github.com:rajsekha/calculator.git
+git remote add origin https://github.com/rajsekha/calculator.git
 
 git remote -v
 
-echo 'Enter the name of the branch:'
-read branch
+echo "Enter the name of the branch"
 
-git push -f origin "$branch"
+read branch 
+
+git push  origin "$branch"
 
 read
+
 
 
 
