@@ -1,4 +1,4 @@
-app=https\://ctc-device-farm-tsb.s3.amazonaws.com/aff25c5cbb5942c28013b75810996bb0/lambdaStorage/acd36459-2df2-46d5-bac7-74c97914c223/acd364592df246d5bac774c97914c223.apk
+app=https\://ctc-device-farm-tsb.s3.amazonaws.com/aff25c5cbb5942c28013b75810996bb0/lambdaStorage/acd36459-2df2-46d5-bac7-74c97914c223/acd364592df246d5bac774c97914c223123.apk
 appActivity=uk.co.tsb.mobilebank.ui.LaunchActivity
 appPackage=uk.co.tsb.newmobilebank.prod
 appium\:AuthToken=8dcfb3f4-3b8f-41b2-9a01-7030bf643710
